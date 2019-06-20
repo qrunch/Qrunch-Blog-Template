@@ -49,7 +49,7 @@ Qrunchで作成した全てのブログの雛形HTMLとなりますので、デ�
 <br />
 
 ## ファイル構成
-| ファイル名（/src/html/） | URL（パス） |
+| ファイル名（/src/） | URL（パス） |
 | --- | --- |
 | index.html | / |
 | /entries/index.html | /entries |
