@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <!-- ### ページの基本情報 ### -->
+    <title>{{ Current Page Title }}</title>
+    <meta name="description" content="{{ Current Page Description }}" />
+    <link rel="icon" href="{{ Blog Icon URL }}" sizes="16x16" type="image/png" />
+    <link rel="apple-touch-icon-precomposed" href="{{ Blog Icon URL }}" />
+
+    <!-- ### エンコードの設定 ### -->
+    <meta charset="utf-8" />
+
+    <!-- ### レスポンシブの設定 ### -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <!-- ### OGPの設定 ### -->
+    <meta property="og:url" content="{{ Current Page URL }}" />
+    <meta property="og:title" content="{{ Current Page Title }}" />
+    <meta property="og:description" content="{{ Current Page Description }}" />
+    <meta property="og:image" content="{{ Current Page Thumbnail }}" />
+    <meta property="og:site_name" content="{{ Blog Title }}" />
+    <meta property="og:locale" content="ja_JP" />
+
+    <!-- ### Twitterカードの設定 ### -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@qrunch" />
+
+    <!-- ### その他の読み込みタグ（JS・CSS等） ### -->
+</head>
+
+<body id="{{ Page ID }}">
+    <!-- ### Qrunch グローバルヘッダー（変更不可） ### -->
+
+    <!-- ### ヘッダー ### -->
+    <header class="main-header">
+        <div class="main-header__inner">
+            <h1 class="main-header__blog-title">
+                <a href="/" class="main-header__blog-title-link">{{ Blog Title }}</a>
+            </h1>
+            <h2 class="main-header__blog-description">{{ Blog Description }}</h2>
+            <nav class="main-header__navigation">
+                <ul class="main-header__navigation-items">
+                    <li class="main-header__navigation-item">
+                        <a href="/" class="main-header__navigation-item-link">トップ</a>
+                    </li>
+                    <li class="main-header__navigation-item">
+                        <a href="/entries" class="main-header__navigation-item-link">記事一覧</a>
+                    </li>
+                    <li class="main-header__navigation-item">
+                        <a href="/logs" class="main-header__navigation-item-link">ログ一覧</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ### ヘッダー下 自由挿入エリア ### -->
+    <div class="customize-area　below-header-customize-area">
+        {{ Customize Code }}
+    </div>
+
+    <!-- ### コンテントボックス ### -->
+    <div class="content-box">
+        <div class="content-box__inner">
+
+            <!-- ### メインコンテント ### -->
+            <div class="content-box__main-content">
+                <main class="main_content">
+                    <div class="main_content__inner">
+                        <!-- ### メインコンテントの内容 ### -->
+                    </div>
+                </main>
+            </div>
+            
+            <!-- ### サブコンテント（サイドバー） ### -->
+            <div class="content-box__sub-content">
+                <aside class="sub-content">
+                    <div class="sub-content__inner">
+                        <!-- ### サブコンテントの内容 ### -->
+                    </div>
+                </aside>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ### フッター上 自由挿入エリア ### -->
+    <div class="customize-area　above-footer-customize-area">
+        {{ Customize Code }}
+    </div>
+
+    <!-- ### フッター ### -->
+    <footer class="main-footer">
+        <div class="main-footer__inner">
+            <span class="main-footer__blog-title">
+                    <a href="/" class="main-footer__blog-title-link">{{ Blog Title }}</a>
+            </span>
+            <span class="main-footer__blog-copyright">©2018-2019 <a
+                href="/" target="_blank" class="main-footer__blog-copyright-user-link">@{{ User Screen Name }}</a>, Powered by <a
+                href="https://qrunch.net" target="_blank" class="main-footer__blog-copyright-qrunch-link">Qrunch</a>.</span>
+        </div>
+    </footer>
+</body>
+</html>
