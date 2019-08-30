@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <!-- ### ページの基本情報 ### -->
     <title>{{ Current Page Title }}</title>
@@ -28,7 +29,7 @@
     <!-- ### その他の読み込みタグ（JS・CSS等） ### -->
 </head>
 
-<body id="{{ Page ID }}">
+<body id="top-page">
     <!-- ### Qrunch グローバルヘッダー（変更不可） ### -->
 
     <!-- ### ヘッダー ### -->
@@ -40,7 +41,7 @@
             <h2 class="main-header__blog-description">{{ Blog Description }}</h2>
             <nav class="main-header__navigation">
                 <ul class="main-header__navigation-items">
-                    <li class="main-header__navigation-item">
+                    <li class="main-header__navigation-item main-header__navigation-item--current">
                         <a href="/" class="main-header__navigation-item-link">トップ</a>
                     </li>
                     <li class="main-header__navigation-item">
@@ -93,12 +94,14 @@
     <footer class="main-footer">
         <div class="main-footer__inner">
             <span class="main-footer__blog-title">
-                    <a href="/" class="main-footer__blog-title-link">{{ Blog Title }}</a>
+                <a href="/" class="main-footer__blog-title-link">{{ Blog Title }}</a>
             </span>
-            <span class="main-footer__blog-copyright">©2018-2019 <a
-                href="/" target="_blank" class="main-footer__blog-copyright-user-link">@{{ User Screen Name }}</a>, Powered by <a
-                href="https://qrunch.net" target="_blank" class="main-footer__blog-copyright-qrunch-link">Qrunch</a>.</span>
+            <span class="main-footer__blog-copyright">©2018-2019 <a href="{{ User Page URL }}" target="_blank"
+                    class="main-footer__blog-copyright-user-link">@{{ User Screen Name }}</a>, Powered by <a
+                    href="https://qrunch.net" target="_blank"
+                    class="main-footer__blog-copyright-qrunch-link">Qrunch</a>.</span>
         </div>
     </footer>
 </body>
+
 </html>
