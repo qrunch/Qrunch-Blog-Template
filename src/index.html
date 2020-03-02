@@ -56,7 +56,7 @@
     </header>
 
     <!-- ### ヘッダー下 自由挿入エリア ### -->
-    <div class="customize-area　below-header-customize-area">
+    <div class="below-header-customize-area customize-area">
         {{ Customize Code }}
     </div>
 
@@ -70,7 +70,7 @@
                     <div class="main-content__inner">
 
                         <!-- ### トップページ・記事リスト ### -->
-                        <div class="entry-list">
+                        <div class="entry-list top-entry-list">
                             <div class="entry-list__entries">
 
                                 <!-- ### 記事 ### -->
@@ -112,7 +112,7 @@
                                     <a href="{{ Previous Page Link}}" class="content-list-pager__previous-link">前のページへ</a>
                                 </span>
                                 <span class="content-list-pager__next">
-                                    <a href="{{ Next Page Link }}" class="content-list-pager__next-link">前のページへ</a>
+                                    <a href="{{ Next Page Link }}" class="content-list-pager__next-link">次のページへ</a>
                                 </span>
 
                                 <!-- ページ分割がない場合 -->
@@ -120,7 +120,7 @@
                                     <a class="content-list-pager__previous-link content-list-pager__previous-link--disabled">前のページへ</a>
                                 </span>
                                 <span class="content-list-pager__next">
-                                    <a class="content-list-pager__next-link content-list-pager__next-link--disabled">前のページへ</a>
+                                    <a class="content-list-pager__next-link content-list-pager__next-link--disabled">次のページへ</a>
                                 </span>
 
                             </div>
@@ -232,19 +232,19 @@
     </div>
 
     <!-- ### フッター上 自由挿入エリア ### -->
-    <div class="customize-area　above-footer-customize-area">
+    <div class="above-footer-customize-area customize-area">
         {{ Customize Code }}
     </div>
 
     <!-- ### フッター ### -->
     <footer class="main-footer">
         <div class="main-footer__inner">
-            <span class="main-footer__blog-title">
+            <div class="main-footer__blog-title">
                     <a href="/" class="main-footer__blog-title-link">{{ Blog Title }}</a>
-            </span>
-            <span class="main-footer__blog-copyright">©2018-2019 <a
-                href="{{ User Page URL }}" target="_blank" class="main-footer__blog-copyright-user-link">@{{ User Screen Name }}</a>, Powered by <a
-                href="https://qrunch.net" target="_blank" class="main-footer__blog-copyright-qrunch-link">Qrunch</a>.</span>
+            </div>
+            <div class="main-footer__blog-copyright">©2018-2019 <a
+                href="{{ User Page URL }}" target="_blank" class="main-footer__blog-copyright-link">@{{ User Screen Name }}</a>, Powered by <a
+                href="https://qrunch.net" target="_blank" class="main-footer__blog-copyright-link">Qrunch</a>.</div>
         </div>
     </footer>
     </div>
