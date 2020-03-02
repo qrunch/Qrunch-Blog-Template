@@ -56,7 +56,7 @@
     </header>
 
     <!-- ### ヘッダー下 自由挿入エリア ### -->
-    <div class="customize-area　below-header-customize-area">
+    <div class="below-header-customize-area customize-area">
         {{ Customize Code }}
     </div>
 
@@ -100,13 +100,11 @@
                                 </div>
 
                                 <!-- ### ログ 本文 ### -->
-                                <div class="log__content">
-                                    <div class="log-content">
+                                <div class="log__content content">
                                         {{ Log Content }}
-                                    </div>
                                 </div>
 
-                                <!-- ### ログ・ログ上（本文下） 自由挿入エリア ### -->
+                                <!-- ### ログ・ログ下（本文下） 自由挿入エリア ### -->
                                 <div class="customize-area below-content-customize-area">
                                     {{ Customize Code }}
                                 </div>
@@ -286,19 +284,19 @@
     </div>
 
     <!-- ### フッター上 自由挿入エリア ### -->
-    <div class="customize-area　above-footer-customize-area">
+    <div class="above-footer-customize-area customize-area">
         {{ Customize Code }}
     </div>
 
     <!-- ### フッター ### -->
     <footer class="main-footer">
         <div class="main-footer__inner">
-            <span class="main-footer__blog-title">
+            <div class="main-footer__blog-title">
                     <a href="/" class="main-footer__blog-title-link">{{ Blog Title }}</a>
-            </span>
-            <span class="main-footer__blog-copyright">©2018-2019 <a
-                href="/" target="_blank" class="main-footer__blog-copyright-user-link">@{{ User Screen Name }}</a>, Powered by <a
-                href="https://qrunch.net" target="_blank" class="main-footer__blog-copyright-qrunch-link">Qrunch</a>.</span>
+            </div>
+            <div class="main-footer__blog-copyright">©2018-2019 <a
+                href="/" target="_blank" class="main-footer__blog-copyright-link">@{{ User Screen Name }}</a>, Powered by <a
+                href="https://qrunch.net" target="_blank" class="main-footer__blog-copyright-link">Qrunch</a>.</div>
         </div>
     </footer>
     </div>

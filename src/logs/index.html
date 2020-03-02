@@ -56,7 +56,7 @@
     </header>
 
     <!-- ### ヘッダー下 自由挿入エリア ### -->
-    <div class="customize-area　below-header-customize-area">
+    <div class="below-header-customize-area customize-area">
         {{ Customize Code }}
     </div>
 
@@ -70,9 +70,9 @@
                     <div class="main-content__inner">
 
                         <!-- ### トップページ・ログリスト ### -->
-                        <div class="log-list">
+                        <div class="log-list top-log-list">
                             <h2 class="log-list__title">ログ一覧</h2>
-                            <div class="log-list__logs">
+                            <div class="log-list__entries">
 
                                 <!-- ### ログ ### -->
                                 <div class="log-item log-item--small">
@@ -83,24 +83,14 @@
                                         <h2 class="log-item__title">
                                             <a href="{{ Log URL }}" class="log-item__title-link">{{ Log Title }}</a>
                                         </h2>
-                                        <div class="log-item__categories">
-                                            <span class="log-item__category-item">
-                                                <a href="{{ Category 1 URL }}" class="log-item__category-item-link">{{ Log Category-1 Name }}</a>
-                                            </span>
-                                            <span class="log-item__category-item">
-                                                <a href="{{ Category 2 URL }}" class="log-item__category-item-link">{{ Log Category-2 Name }}</a>
-                                            </span>
-                                            <span class="log-item__category-item">
-                                                <a href="{{ Category 3 URL }}" class="log-item__category-item-link">{{ Log Category-3 Name }}</a>
-                                            </span>
-                                        </div>
+                                        <div class="log-item__description">{{ Entry Desciption }}</div>
                                     </div>
                                 </div>
 
                             </div>
 
                             <!-- ### 表示するデータがない場合 ### -->
-                            <div class="log-list__no-content">まだログが記録されていません</div>
+                            <div class="log-list__no-content">まだログがありません</div>
                         </div>
 
                         <!-- ページャ -->
@@ -232,7 +222,7 @@
     </div>
 
     <!-- ### フッター上 自由挿入エリア ### -->
-    <div class="customize-area　above-footer-customize-area">
+    <div class="above-footer-customize-area customize-area">
         {{ Customize Code }}
     </div>
 
@@ -243,8 +233,8 @@
                     <a href="/" class="main-footer__blog-title-link">{{ Blog Title }}</a>
             </span>
             <span class="main-footer__blog-copyright">©2018-2019 <a
-                href="/" target="_blank" class="main-footer__blog-copyright-user-link">@{{ User Screen Name }}</a>, Powered by <a
-                href="https://qrunch.net" target="_blank" class="main-footer__blog-copyright-qrunch-link">Qrunch</a>.</span>
+                href="/" target="_blank" class="main-footer__blog-copyright-link">@{{ User Screen Name }}</a>, Powered by <a
+                href="https://qrunch.net" target="_blank" class="main-footer__blog-copyright-link">Qrunch</a>.</span>
         </div>
     </footer>
     </div>
