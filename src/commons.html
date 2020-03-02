@@ -57,7 +57,7 @@
     </header>
 
     <!-- ### ヘッダー下 自由挿入エリア ### -->
-    <div class="customize-area　below-header-customize-area">
+    <div class="below-header-customize-area customize-area">
         {{ Customize Code }}
     </div>
 
@@ -87,20 +87,20 @@
     </div>
 
     <!-- ### フッター上 自由挿入エリア ### -->
-    <div class="customize-area　above-footer-customize-area">
+    <div class="above-footer-customize-area customize-area">
         {{ Customize Code }}
     </div>
 
     <!-- ### フッター ### -->
     <footer class="main-footer">
         <div class="main-footer__inner">
-            <span class="main-footer__blog-title">
+            <div class="main-footer__blog-title">
                 <a href="/" class="main-footer__blog-title-link">{{ Blog Title }}</a>
-            </span>
-            <span class="main-footer__blog-copyright">©2018-2019 <a href="{{ User Page URL }}" target="_blank"
-                    class="main-footer__blog-copyright-user-link">@{{ User Screen Name }}</a>, Powered by <a
+            </div>
+            <div class="main-footer__blog-copyright">©2018-2019 <a href="{{ User Page URL }}" target="_blank"
+                    class="main-footer__blog-copyright-link">@{{ User Screen Name }}</a>, Powered by <a
                     href="https://qrunch.net" target="_blank"
-                    class="main-footer__blog-copyright-qrunch-link">Qrunch</a>.</span>
+                    class="main-footer__blog-copyright-link">Qrunch</a>.</div>
         </div>
     </footer>
     </div>
